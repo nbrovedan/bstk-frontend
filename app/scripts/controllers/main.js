@@ -8,7 +8,8 @@
  * Controller of the bstkAppApp
  */
 angular.module('bstkApp')
-  .controller('MainCtrl', ['$scope','pessoasAPI', 'pessoas','msg', function ($scope, pessoasAPI, pessoas, msg) {
+  .controller('MainCtrl', ['$scope','pessoasAPI', 'pessoas','msg', 
+  				  function ($scope, pessoasAPI, pessoas, msg) {
    	
    	function init(){
    		$scope.pessoas = pessoas.data;

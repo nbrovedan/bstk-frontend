@@ -8,7 +8,8 @@
  * Controller of the bstkAppApp
  */
 angular.module('bstkApp')
-  .controller('FormCtrl', ['$scope', '$state', 'config','pessoasAPI','$stateParams','msg', function ($scope, $state, config, pessoasAPI, $stateParams, msg) {
+  .controller('FormCtrl', ['$scope', '$state', 'config','pessoasAPI','$stateParams','msg', 
+  				  function ($scope,   $state,   config,  pessoasAPI,  $stateParams,  msg) {
   		function init(){
   			if($stateParams.id){
   				pessoasAPI.getById($stateParams.id).then(function(result){

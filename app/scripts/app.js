@@ -19,15 +19,10 @@ angular
     'ngMask',
     'ngAlertify'
   ])
-  .config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+  .config(['$urlRouterProvider', '$stateProvider', 
+  function($urlRouterProvider,    $stateProvider) {
 
         $stateProvider
-            // .state('main', {
-            //     url: '/main',
-            //     templateUrl: 'views/main.html',
-            //     controller: 'MainCtrl',
-            //     abstract: true
-            // })
             .state('main', {
                 url: '/main',
                 templateUrl: 'views/main.html',

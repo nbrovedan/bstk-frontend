@@ -8,7 +8,8 @@
  * Factory in the bstkApp.
  */
 angular.module('bstkApp')
-  .factory('pessoasAPI', ['$http', 'config', function ($http, config) {
+  .factory('pessoasAPI', ['$http', 'config', 
+                 function ($http,   config) {
     
     var _getAll = function(){
       return $http.get(config.urlServer + '/pessoas');
