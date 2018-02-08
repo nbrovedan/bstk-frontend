@@ -1,0 +1,43 @@
+<div class="container-fluid" style="width: 60%">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <a type="button" class="btn btn btn-default" href="/#!/">
+      <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Voltar
+    </a>
+  </div>
+  <div class="panel-body">
+   	<form name="pessoaForm" novalidate>
+	  <div class="form-group" ng-class="{ 'has-error' : pessoaForm.nome.$invalid && !pessoaForm.nome.$pristine }">
+	    <label for="nome">Nome</label>
+	    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" ng-model="pessoa.nome" required="true" ng-minlength="3" ng-maxlength="150">
+	    <p ng-show="pessoaForm.nome.$error.required && !pessoaForm.nome.$pristine" class="help-block">O nome deve ser informado</p>
+	    <p ng-show="pessoaForm.nome.$error.minlength" class="help-block">O nome deve ter mais que 3 caracteres</p>
+	    <p ng-show="pessoaForm.nome.$error.maxlength" class="help-block">O nome deve ter, no máximo, 150 caracteres</p>
+	  </div>
+	  <div class="form-group" ng-class="{ 'has-error' : pessoaForm.telefone.$invalid && !pessoaForm.telefone.$pristine }">
+	    <label for="telefone">Telefone</label>
+	    <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone" mask="(99) 9?9999-9999" autocomplete="false" ng-model="pessoa.telefone" required="true" ng-minlength="14" ng-maxlength="15">
+	    <p ng-show="pessoaForm.telefone.$error.required && !pessoaForm.nome.$pristine" class="help-block">O telefone deve ser informado</p>
+	    <p ng-show="pessoaForm.nome.$error.minlength || pessoaForm.nome.$error.maxlength" class="help-block">O telefone está incorreto</p>
+	  </div>
+	   <div class="form-group" ng-class="{ 'has-error' : pessoaForm.sexo.$invalid && !pessoaForm.sexo.$pristine }">
+		  <label for="sexo">Sexo</label>
+		  <select class="form-control" id="sexo" ng-model="pessoa.sexo" required="true" name="sexo">
+		  	<option value="">Selecione o sexo</option>
+		    <option value="F">Feminino</option>
+		    <option value="M">Masculino</option>
+		  </select>
+		  <p ng-show="pessoaForm.sexo.$error.required && !pessoaForm.sexo.$pristine" class="help-block">Selecione o sexo da pessoa</p>
+		</div> 
+	  <p class="text-right" style="width: 100%">
+	  	<a type="submit" class="btn btn-default" href="/#!/">
+	  		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Descartar
+	  	</a>
+	  	<button type="submit" class="btn btn-primary" ng-click="salvar(pessoa)" >
+	  		 <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Salvar
+	  	</button>
+	  </p>
+	</form>
+  </div>
+</div>
+</div>
