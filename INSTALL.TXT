@@ -10,6 +10,7 @@ OBSERVAÇõES:
 -- NodeJS
 -- NPM
 -- bower
+-- Grunt
 
 2. Baixar o código fonte do backend para uma pasta com o seguinte comando:
 -  git clone https://github.com/nbrovedan/bstk-backend.git
