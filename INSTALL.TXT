@@ -1,0 +1,46 @@
+OBSERVAÇõES:
+-- O container docker usado nesse projeto foi criado e configurado num MacOS. Nos testes executados em ambiente Windows, o mesmo apresentou problemas de incompatibilidade. Sendo assim, esses procedimentos somente serão executados com sucesso nos SO's MacOS ou Linux;
+-- A API está conectando em um banco de dados hospedado na AWS. Caso queira usar localmente, o arquivo persistence.xml deverá ser configurado de acordo com os parâmetros locais. 
+
+1. Instalar ou ter instalado os seguintes programas:
+-- JDK 1.8
+-- Git
+-- maven
+-- Docker
+-- NodeJS
+-- NPM
+-- bower
+
+2. Baixar o código fonte do backend para uma pasta com o seguinte comando:
+-  git clone https://github.com/nbrovedan/bstk-backend.git
+
+3. Entrar no repositório bstk-backend criado pelo git e executar o seguinte comando: 
+-- ./buildAndRun.sh
+
+4. Baixar o código fonte do frontend para uma pasta com o seguinte comando:
+-  git clone https://github.com/nbrovedan/bstk-frontend.git
+
+5. Entrar no repositório bastk-frontend criado pelo git e executar os seguintes comandos:
+-- npm install
+-- bower install
+-- grunt server
+
+INFORMAÇõES DO PROJETO:
+- BACKEND:
+-- Java 1.8;
+-- Glassfish 5;
+-- Jersey 2;
+-- Hibernate 5;
+-- Maven;
+
+- FRONTEND:
+-- AngularJS;
+-- Yeoman;
+-- NPM;
+-- Bower;
+-- Grunt;
+
+- BANCO DE DADOS:
+-- MySQL 5;
+
+

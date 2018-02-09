@@ -12,4 +12,4 @@ angular.module('bstkApp')
     return {
       urlServer : 'http://localhost:8080/bstk-backend/api'
     };
-  });
+  }); 

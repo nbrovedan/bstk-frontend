@@ -7,7 +7,7 @@
  * # pessoas
  * Factory in the bstkApp.
  */
-angular.module('bstkApp')
+angular.module('bstkApp') 
   .factory('pessoasAPI', ['$http', 'config', 
                  function ($http,   config) {
     
